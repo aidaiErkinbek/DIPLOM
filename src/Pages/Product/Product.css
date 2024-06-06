@@ -1,0 +1,22 @@
+.ProductImg {
+    width: 170px;
+    height: 250px;
+    margin-bottom: 25px;
+}
+.productPrice{
+    color: red;
+    margin-bottom: 8px;
+}
+.productName{
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+.ovreview{
+    max-width: 700px;
+    margin-bottom: 8px;
+}
+.length,
+.format,
+.publisher{
+    margin-bottom: 8px;
+}

@@ -26,7 +26,7 @@ export default function CartList() {
     .map((product) => (
       <div className="cartItem" key={product.id}>
         <Link to={"/products/" + product.slug}>
-          <img src={product.picture} alt={product.name} />
+          <img src={product.img} alt={product.name} />
         </Link>
         <Link to={"/products/" + product.slug}>{product.name}</Link>
 

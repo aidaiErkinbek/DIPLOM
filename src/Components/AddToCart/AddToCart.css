@@ -1,13 +1,14 @@
 .AddToCart button {
   padding: 2px 10px;
   margin-right: 5px;
-  background-color: #e85a71;
+  background-color: #0fa6b6;
   border: none;
   color: white;
   border-radius: 5px;
   font-family: inherit;
   transition: all 100ms linear;
+  max-width: 200px;
 }
 .AddToCart button:hover {
-  background-color: rgb(255, 130, 151);
+  background-color: #008575 ;
 }

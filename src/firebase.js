@@ -8,14 +8,12 @@ import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA3RH_sHZlSzYjgWFjMJ8ICqUaSmlM32MI",
-  authDomain: "test-react-24.firebaseapp.com",
-  databaseURL: "https://test-react-24-default-rtdb.firebaseio.com",
-  projectId: "test-react-24",
-  storageBucket: "test-react-24.appspot.com",
-  messagingSenderId: "953116776213",
-  appId: "1:953116776213:web:e53b5925ca77097c89bb1c",
-  measurementId: "G-BTZC17XYPD"
+  apiKey: "AIzaSyAqmCwne-6DPXUSEU2krD_hvrvjYKfH0g4",
+  authDomain: "bookstore-962d6.firebaseapp.com",
+  projectId: "bookstore-962d6",
+  storageBucket: "bookstore-962d6.appspot.com",
+  messagingSenderId: "773275175657",
+  appId: "1:773275175657:web:c148b003bf640dbda0be78"
 };
 
 // Initialize Firebase

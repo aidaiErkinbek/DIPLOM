@@ -1,0 +1,58 @@
+.Footer{
+    background: #0fa6b6;
+    color: azure;
+    padding: 25px 0 ;
+}
+
+.FooterContent{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.FooterLeft{
+    width: 80%;
+    padding-right: 20px;
+}
+.FooterRight{
+    width: 20%;
+    padding-left: 20px;
+    border-left: 1.5px solid #21212243;
+}
+.FooterLinksSection{
+    margin-bottom: 30px;
+}
+.FooterTxt{
+	font-size: 14px;
+	font-weight: 500;
+}
+.FooterLinksTit{
+    margin-bottom: 20px;
+}
+.Foot_logo{
+    width: 35px;
+    margin-right: 10px;
+}
+.FooterLinksSection li{
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+.FooterBottom{
+    border-top: 1.5px solid #21212243;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+.FooterCopy{
+    font-size: 13px;
+	font-weight: 500; 
+    padding-top: 30px 0; 
+    margin-bottom: 25px;
+}
+.FooterBotLinks li{
+    display: inline-block;
+    font-size: 14px;
+	font-weight: 500; 
+    
+}
+.secure{
+    align-items: center;
+}

@@ -1,0 +1,23 @@
+.contTit{
+    font-size: 18px;
+    border-bottom: 2px solid #e8e8e9;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+}
+.contLogo{
+    display: block;
+	width: 35px;
+    height: 35px;
+}
+.contTxt{
+    border-bottom: 2px solid #e8e8e9;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+}

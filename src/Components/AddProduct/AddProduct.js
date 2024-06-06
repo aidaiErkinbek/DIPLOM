@@ -7,10 +7,13 @@ import { addDoc } from "firebase/firestore";
 export default function AddProduct({ category }) {
   const { user } = useContext(AppContext);
   const [name, setName] = useState("");
+  const [Publisher, setPublisher] = useState("");
   const [price, setPrice] = useState(0);
-  const [picture, setPicture] = useState(null);
-  const [description, setDescription] = useState("");
+  const [img, setPicture] = useState(null);
+  const [BookOverview, setDescription] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [Length, setLength] = useState("");
+
 
   if (!user || !user.isAdmin) {
     return null;
@@ -18,6 +21,14 @@ export default function AddProduct({ category }) {
 
   function onChangeName(event) {
     setName(event.target.value);
+  }
+
+  function onChangePublisher(event) {
+    setPublisher(event.target.value);
+  }
+
+  function onChangeLength(event) {
+    setLength(event.target.value);
   }
   function onChangePrice(event) {
     setPrice(event.target.value);
@@ -33,25 +44,29 @@ export default function AddProduct({ category }) {
   function onFormSubmit(event) {
     event.preventDefault();
 
-    if (!picture) {
+    if (!img) {
       alert("Please upload an picture");
       return;
     }
 
     setIsSubmitting(true);
-    uploadProductPhoto(picture)
+    uploadProductPhoto(img)
       .then((pictureUrl) =>
         addDoc(productsCollection, {
           category: category.id,
           name: name,
+          Publisher: Publisher,
+          Length: Length,
           price: Number(price),
-          picture: pictureUrl,
-          description: description,
+          img: pictureUrl,
+          BookOverview: BookOverview,
           slug: name.replaceAll(" ", "-").toLowerCase(),
         })
       )
       .then(() => {
         setName("");
+        setPublisher("");
+        setLength("");
         setPrice(0.0);
         setPicture(null);
         setDescription("");
@@ -78,6 +93,28 @@ export default function AddProduct({ category }) {
             required
           />
         </label>
+
+        <label>
+        Publisher:
+          <input
+            type="text"
+            value={Publisher}
+            Publisher="Publisher"
+            onChange={onChangePublisher}
+            required
+          />
+        </label>
+
+        <label>
+        Length:
+          <input
+            type="text"
+            value={Length}
+            Length="Length"
+            onChange={onChangeLength}
+            required
+          />
+        </label>
         <label>
           Price:
           <input
@@ -94,7 +131,7 @@ export default function AddProduct({ category }) {
           Picture:
           <input
             type="file"
-            name="picture"
+            name="img"
             onChange={onChangePicture}
             required
           />
@@ -103,8 +140,8 @@ export default function AddProduct({ category }) {
           Description:
           <textarea
             type=""
-            name="description"
-            value={description}
+            name="BookOverview"
+            value={BookOverview}
             onChange={onChangeDescription}
             required
           />

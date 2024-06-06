@@ -12,7 +12,7 @@ export default function ProductList({ category }) {
     .map(product => (
       <div key={product.id} className="product">
         <Link to={"/products/" + product.slug}>
-          <img src={product.picture} alt={product.name} />
+          <img src={product.img} alt={product.name} />
         </Link>
         <hr />
         <Link to={"/products/" + product.slug} className="text">

@@ -59,9 +59,9 @@ textarea{
 	resize: none;
 }
 body{
-	font-size: 16px;
-	line-height: 1.2;
-	color: #242424;
+	font-size: 20px;
+	line-height: 19px;
+	color: #363636;
 	width: 100%;
 	font-family: 'Open Sans', arial, sans-serif;
 }
@@ -75,6 +75,9 @@ body{
 .dn{
 	display: none;
 }
+.db{
+	display: block;
+}
 section{
 	padding: 0 0 80px;
 }
@@ -82,7 +85,7 @@ main{
 	padding: 20px 0;
 }
 .color{
-	color: #BE963F;
+	color: #008575;
 }
 .dib{
 	display: inline-block;
@@ -91,13 +94,13 @@ main{
 	transition: 0.3s;
 }
 .hover:hover{
-	color: #BE963F;
+	color: #008575;
 }
 .link{
 	transition: 0.3s;
 }
 .link:hover{
-	box-shadow: 0px 6px 5px 2px #836A36;
+	box-shadow: 0px 6px 5px 2px #008575;
 }
 .flex{
 	display: flex;

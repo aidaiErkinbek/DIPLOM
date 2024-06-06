@@ -1,0 +1,29 @@
+.delTit{
+    color: #008575;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+.delTitGr{
+    margin-bottom: 15px;
+    font-size: 22px;   
+}
+.upTxt{
+    width: 600px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.need{
+    color: #008575;
+    background-color: rgb(136, 217, 216);  
+    padding: 25px 10px;
+  
+}
+.list{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.delTxt{
+    font-size: 16px;
+    margin-bottom: 15px; 
+}
